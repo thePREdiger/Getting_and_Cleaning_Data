@@ -13,9 +13,9 @@ S <- rbind(tmp1, tmp2)
 
 # Extracts only the measurements on the mean and standard deviation for each measurement
 features <- read.table("features.txt")
-indices_of_good_features <- grep("-mean\\(\\)|-std\\(\\)", features[, 2])
-X <- X[, indices_of_good_features]
-names(X) <- features[indices_of_good_features, 2]
+selected_features <- grep("-mean\\(\\)|-std\\(\\)", features[, 2])
+X <- X[, selected_features]
+names(X) <- features[selected_features, 2]
 names(X) <- gsub("\\(|\\)", "", names(X))
 names(X) <- tolower(names(X))
 
