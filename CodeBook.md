@@ -2,10 +2,15 @@
 
 Basis Dataset
 https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
+See the README.md for instructions to run the analysis.
+
 
 The R script *run_analysis.R* contains the following transformations:
 
-* Merges the training and test sets (X_train.txt&X_test.txt;Y_train.txt&Y_test.txt;subject_train.txt&subject_test.txt; ) to create one dataset 
+* Merges the training and test sets to create one dataset 
+** X_train.txt & X_test.txt
+** Y_train.txt & Y_test.txt
+** subject_train.txt & subject_test.txt
 
 * Based on the *features.txt* file, only measurements on the mean and std (standard) deviation are extracted
 
